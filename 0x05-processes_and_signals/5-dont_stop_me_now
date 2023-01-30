@@ -2,7 +2,7 @@
 # kills the infinity and beyond program using sigkill signal
 
 # Get the pid of the program
-id=$(grep "bash ./4-to_infinity_and_beyond" -f)
+id=$(pgrep "bash ./4-to_infinity_and_beyond" -f)
 
 # Terminate the infinite process
 if [ -n "$id" ]
